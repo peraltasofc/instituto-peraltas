@@ -1,0 +1,47 @@
+.impacto-hero {
+  background-color: var(--preto);
+  padding: 5rem 0;
+}
+
+.impacto-hero h1 {
+  color: var(--branco);
+}
+
+.impacto-hero p {
+  color: #ddd;
+  max-width: 720px;
+}
+
+.impacto-numeros {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+
+.numero {
+  background-color: var(--cinza-claro);
+  padding: 2.5rem 2rem;
+  border-radius: 14px;
+  text-align: center;
+}
+
+.numero strong {
+  display: block;
+  font-size: 2.5rem;
+  color: var(--laranja);
+}
+
+.numero span {
+  color: var(--cinza-medio);
+}
+
+.lista-impacto {
+  margin-top: 2rem;
+  padding-left: 1.2rem;
+}
+
+.lista-impacto li {
+  margin-bottom: 0.8rem;
+  color: var(--cinza-medio);
+}

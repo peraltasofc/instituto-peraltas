@@ -1,0 +1,49 @@
+.transparencia-hero {
+  background-color: var(--preto);
+  padding: 5rem 0;
+}
+
+.transparencia-hero h1 {
+  color: var(--branco);
+}
+
+.transparencia-hero p {
+  color: #ddd;
+  max-width: 720px;
+}
+
+.lista-dados {
+  list-style: none;
+  margin-top: 2rem;
+}
+
+.lista-dados li {
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #e0e0e0;
+  color: var(--cinza-escuro);
+}
+
+.section-dark .lista-dados li {
+  border-color: #333;
+  color: var(--branco);
+}
+
+.documentos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.documentos a {
+  background-color: var(--laranja);
+  color: var(--branco);
+  padding: 0.8rem 1.4rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.documentos a:hover {
+  opacity: 0.9;
+}

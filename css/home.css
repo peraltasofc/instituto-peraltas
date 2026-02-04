@@ -1,0 +1,56 @@
+.hero {
+  background: linear-gradient(
+    rgba(15, 15, 15, 0.75),
+    rgba(15, 15, 15, 0.75)
+  ), url("../assets/imagens/banner.jpg") center/cover;
+  padding: 7rem 0;
+}
+
+.hero-content h1 {
+  color: var(--branco);
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.hero-content p {
+  color: #ddd;
+  margin: 1.5rem 0 2.5rem;
+}
+
+.btn-primary {
+  background-color: var(--laranja);
+  color: var(--branco);
+  padding: 0.9rem 2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn-secondary {
+  color: var(--laranja);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.card {
+  background-color: var(--branco);
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.card strong {
+  font-size: 2rem;
+  color: var(--laranja);
+}

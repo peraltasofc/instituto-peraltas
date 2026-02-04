@@ -1,0 +1,76 @@
+.contato-hero {
+  background-color: var(--preto);
+  padding: 5rem 0;
+}
+
+.contato-hero h1 {
+  color: var(--branco);
+}
+
+.contato-hero p {
+  color: #ddd;
+  max-width: 720px;
+}
+
+.contato-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.contato-info ul {
+  list-style: none;
+  margin: 1.5rem 0;
+}
+
+.contato-info li {
+  margin-bottom: 0.8rem;
+  color: var(--cinza-medio);
+}
+
+.observacao {
+  font-size: 0.9rem;
+  color: var(--cinza-medio);
+}
+
+.contato-form {
+  background-color: var(--cinza-claro);
+  padding: 2.5rem;
+  border-radius: 16px;
+}
+
+.contato-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.contato-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+}
+
+.contato-form input,
+.contato-form select,
+.contato-form textarea {
+  margin-top: 0.4rem;
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.contato-form button {
+  margin-top: 1rem;
+}
+
+.btn-primary {
+  background-color: var(--laranja);
+  color: var(--branco);
+  padding: 0.9rem 2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+}

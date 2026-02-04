@@ -1,0 +1,35 @@
+.oqf-hero {
+  background-color: var(--preto);
+  padding: 5rem 0;
+}
+
+.oqf-hero h1 {
+  color: var(--branco);
+}
+
+.oqf-hero p {
+  color: #ddd;
+  max-width: 720px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+
+.card {
+  background-color: var(--cinza-claro);
+  padding: 2rem;
+  border-radius: 14px;
+}
+
+.card h3 {
+  color: var(--preto);
+  margin-bottom: 0.8rem;
+}
+
+.card p {
+  color: var(--cinza-medio);
+}

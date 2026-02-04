@@ -1,0 +1,40 @@
+.qs-hero {
+  background-color: var(--preto);
+  padding: 5rem 0;
+}
+
+.qs-hero h1 {
+  color: var(--branco);
+}
+
+.qs-hero p {
+  color: #ddd;
+  max-width: 720px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background-color: var(--branco);
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.card h3 {
+  color: var(--preto);
+  margin-bottom: 1rem;
+}
+
+.card ul {
+  margin-top: 0.5rem;
+  padding-left: 1.2rem;
+}
+
+.card ul li {
+  margin-bottom: 0.5rem;
+  color: var(--cinza-medio);
+}
