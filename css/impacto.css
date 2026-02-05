@@ -45,3 +45,28 @@
   margin-bottom: 0.8rem;
   color: var(--cinza-medio);
 }
+
+/* Imagem dentro dos cards de impacto */
+.numero img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1.2rem;
+}
+
+/* Ajuste fino de hierarquia visual */
+.numero strong {
+  margin-bottom: 0.4rem;
+}
+
+.numero span {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* Hover sutil (profissional, não chamativo) */
+.numero:hover {
+  transform: translateY(-4px);
+  transition: transform 0.25s ease;
+}
