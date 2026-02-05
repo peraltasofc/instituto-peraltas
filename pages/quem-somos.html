@@ -22,6 +22,9 @@
   <header class="header">
     <div class="container nav">
       <a href="../index.html" class="logo">Instituto Peraltas</a>
+        <button class="menu-toggle" aria-label="Abrir menu">
+        ☰
+       </button>
 
       <ul class="menu">
         <li><a href="quem-somos.html" class="active">Quem Somos</a></li>
@@ -63,6 +66,40 @@
         </p>
       </div>
     </section>
+
+    <!-- VÍDEO INSTITUCIONAL -->
+<section class="section section-light">
+  <div class="container video-institucional">
+    
+    <h2>O Peraltas na prática</h2>
+    <p class="video-description">
+      Mais do que palavras, o Instituto Peraltas é feito de pessoas, relações e
+      histórias reais. Assista ao vídeo e conheça de perto nosso dia a dia,
+      nossos treinos e o impacto do trabalho no território.
+    </p>
+
+    <div class="video-wrapper">
+      <!-- OPÇÃO 1: YouTube (recomendado) -->
+      <iframe 
+        src="https://youtu.be/nwoWwBPCmEI" 
+        title="Instituto Peraltas"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+
+      <!-- OPÇÃO 2: Vídeo local (use apenas se for leve e otimizado) -->
+      <!--
+      <video controls preload="metadata" poster="../img/thumb-video.jpg">
+        <source src="../videos/peraltas.mp4" type="video/mp4">
+        Seu navegador não suporta vídeo HTML5.
+      </video>
+      -->
+    </div>
+
+  </div>
+</section>
+
 
     <!-- MISSÃO / VISÃO / VALORES -->
     <section class="section section-light">
@@ -135,6 +172,6 @@
       <p>São Paulo — SP</p>
     </div>
   </footer>
-
+<script src="../js/main.js"></script>
 </body>
 </html>

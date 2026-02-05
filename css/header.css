@@ -1,6 +1,7 @@
 .header {
   background-color: var(--preto);
   padding: 1rem 0;
+  position: relative;
 }
 
 .nav {
@@ -36,4 +37,36 @@
   background-color: var(--laranja);
   padding: 0.5rem 1rem;
   border-radius: 5px;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: var(--branco);
+  cursor: pointer;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    background-color: var(--preto);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    padding: 1.5rem 0;
+    z-index: 999;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
 }
