@@ -56,17 +56,24 @@
     background-color: var(--preto);
     position: absolute;
     top: 100%;
-    right: 0;
-    width: 100%;
-    padding: 1.5rem 0;
+    right: 0;      /* fixa na direita */
+    width: 250px;  /* largura fixa para alinhar */
+    padding: 1.5rem;
     z-index: 999;
   }
 
   .menu.active {
     display: flex;
+    align-items: flex-start; /* itens começam no topo da coluna */
+  }
+
+  .menu li {
+    text-align: right;       /* alinha o texto dos itens à direita */
+    margin: 0.8rem 1rem;
   }
 
   .menu-toggle {
     display: block;
   }
 }
+
