@@ -76,49 +76,52 @@
 
 <!-- FORMULÁRIO -->
     <div class="contato-form">
-      <h2>Envie uma mensagem</h2>
+  <h2>Envie uma mensagem</h2>
 
-      <form action="https://formsubmit.co/peraltas.ofc@gmail.com" method="POST">
+  <form id="contato-form" action="https://formsubmit.co/peraltas.ofc@gmail.com" method="POST" target="formSubmitFrame">
 
-        <!-- Configurações FormSubmit -->
-        <input type="hidden" name="_subject" value="Nova mensagem - Site Instituto Peraltas">
-        <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_autoresponse" value="Recebemos sua mensagem. Retornaremos em até 48 horas úteis. Instituto Peraltas.">
+    <!-- Configurações FormSubmit -->
+    <input type="hidden" name="_subject" value="Nova mensagem - Site Instituto Peraltas">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_autoresponse" value="Recebemos sua mensagem. Retornaremos em até 48 horas úteis. Instituto Peraltas.">
 
-        <!-- Campos do formulário -->
-        <label>
-          Nome
-          <input type="text" name="nome" required placeholder="Seu nome">
-        </label>
+    <!-- Campos do formulário -->
+    <label>
+      Nome
+      <input type="text" name="nome" required placeholder="Seu nome">
+    </label>
 
-        <label>
-          E-mail
-          <input type="email" name="email" required placeholder="seu@email.com">
-        </label>
+    <label>
+      E-mail
+      <input type="email" name="email" required placeholder="seu@email.com">
+    </label>
 
-        <label>
-          Assunto
-          <select name="assunto" required>
-            <option value="">Selecione</option>
-            <option>Participar do projeto</option>
-            <option>Parceria / Patrocínio</option>
-            <option>Voluntariado</option>
-            <option>Outros</option>
-          </select>
-        </label>
+    <label>
+      Assunto
+      <select name="assunto" required>
+        <option value="">Selecione</option>
+        <option>Participar do projeto</option>
+        <option>Parceria / Patrocínio</option>
+        <option>Voluntariado</option>
+        <option>Outros</option>
+      </select>
+    </label>
 
-        <label>
-          Mensagem
-          <textarea name="mensagem" rows="5" required placeholder="Escreva sua mensagem"></textarea>
-        </label>
+    <label>
+      Mensagem
+      <textarea name="mensagem" rows="5" required placeholder="Escreva sua mensagem"></textarea>
+    </label>
 
-        <button type="submit" class="btn-primary">
-          Enviar mensagem
-        </button>
+    <button type="submit" class="btn-primary">Enviar mensagem</button>
+  </form>
 
-      </form>
+  <p id="sucesso-msg" style="display:none; color:green; margin-top:10px;">
+    Sua mensagem foi enviada com sucesso!
+  </p>
 
-        </div>
+  <!-- iframe invisível para envio sem redirecionar -->
+  <iframe name="formSubmitFrame" style="display:none;"></iframe>
+</div>
 
       </div>
     </section>
