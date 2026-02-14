@@ -65,7 +65,7 @@
 
           <ul>
             <li><strong>📍 Cidade:</strong> São Paulo — SP</li>
-            <li><strong>📧 E-mail:</strong> contato@institutoperaltas.org</li>
+            <li><strong>📧 E-mail:</strong> peraltas.ofc@gmail.com</li>
             <li><strong>📱 Instagram:</strong> @peraltas.ofc</li>
           </ul>
 
@@ -74,41 +74,50 @@
           </p>
         </div>
 
-        <!-- FORMULÁRIO -->
-        <div class="contato-form">
-          <h2>Envie uma mensagem</h2>
+<!-- FORMULÁRIO -->
+    <div class="contato-form">
+      <h2>Envie uma mensagem</h2>
 
-          <form>
-            <label>
-              Nome
-              <input type="text" placeholder="Seu nome" required>
-            </label>
+      <form action="https://formsubmit.co/peraltas.ofc@gmail.com" method="POST">
 
-            <label>
-              E-mail
-              <input type="email" placeholder="seu@email.com" required>
-            </label>
+        <!-- Configurações FormSubmit -->
+        <input type="hidden" name="_subject" value="Nova mensagem - Site Instituto Peraltas">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_autoresponse" value="Recebemos sua mensagem. Retornaremos em até 48 horas úteis. Instituto Peraltas.">
 
-            <label>
-              Assunto
-              <select required>
-                <option value="">Selecione</option>
-                <option>Participar do projeto</option>
-                <option>Parceria / Patrocínio</option>
-                <option>Voluntariado</option>
-                <option>Outros</option>
-              </select>
-            </label>
+        <!-- Campos do formulário -->
+        <label>
+          Nome
+          <input type="text" name="nome" required placeholder="Seu nome">
+        </label>
 
-            <label>
-              Mensagem
-              <textarea rows="5" placeholder="Escreva sua mensagem" required></textarea>
-            </label>
+        <label>
+          E-mail
+          <input type="email" name="email" required placeholder="seu@email.com">
+        </label>
 
-            <button type="submit" class="btn-primary">
-              Enviar mensagem
-            </button>
-          </form>
+        <label>
+          Assunto
+          <select name="assunto" required>
+            <option value="">Selecione</option>
+            <option>Participar do projeto</option>
+            <option>Parceria / Patrocínio</option>
+            <option>Voluntariado</option>
+            <option>Outros</option>
+          </select>
+        </label>
+
+        <label>
+          Mensagem
+          <textarea name="mensagem" rows="5" required placeholder="Escreva sua mensagem"></textarea>
+        </label>
+
+        <button type="submit" class="btn-primary">
+          Enviar mensagem
+        </button>
+
+      </form>
+
         </div>
 
       </div>
